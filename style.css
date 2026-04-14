@@ -98,7 +98,7 @@ body {
 
 .ep-sec {
     margin: 25px;
-    border: 2px solid black;
+    padding-top: 10px;
     border-radius: 30px;
     background-color: #4E6A52;
 }
@@ -166,9 +166,8 @@ th {
     justify-content: center;
     text-align: center;
     margin: 30px;
-    border: 2px solid black;
-    border-radius: 30px;
     background-color: white;
+    border-radius: 30px;
     width: auto;
     overflow: hidden;
 }
