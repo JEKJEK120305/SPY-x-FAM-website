@@ -36,6 +36,12 @@ body {
     min-height: 100vh;
 }
 
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #spyxfam h1 {
     color: black;
 }
@@ -66,6 +72,14 @@ body {
 
 .header-sec a:hover {
     background-color: rgb(248, 242, 8);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.header-sec a:active {
+    background-color: #fab3ad;
+    border: none;
     border-radius: 5px;
     padding: 15px;
 }
