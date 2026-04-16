@@ -64,24 +64,84 @@ body {
     gap: 5px;
 }
 
-.header-sec a {
+.header-sec .main-tag {
     text-decoration: none;
     color: rgb(22, 71, 80);
     cursor: pointer;
 }
 
-.header-sec a:hover {
+.header-sec .main-tag:hover {
     background-color: rgb(248, 242, 8);
     border: none;
     border-radius: 5px;
     padding: 15px;
 }
 
-.header-sec a:active {
+.header-sec .main-tag:active {
     background-color: #fab3ad;
     border: none;
     border-radius: 5px;
     padding: 15px;
+}
+
+.dropDown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-btn {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.dropDown-lst {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+}
+
+.dropDown-lst:hover {
+    margin-top: 15px;
+}
+
+.dropDown-lst a {
+    display: block;
+    color: rgb(22, 71, 80);
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropDown-lst a:hover {
+    background-color: #d8d7ce;
+}
+
+.dropDown:hover .dropDown-lst {
+    display: block;
+}
+
+.dropDown:hover .dropdown-btn {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.dropDown-lst::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    pointer-events: none;
 }
 
 .about {
@@ -99,6 +159,7 @@ body {
 .ep-sec {
     margin: 25px;
     padding-top: 10px;
+    border: none;
     border-radius: 30px;
     background-color: #4E6A52;
     width: calc(100% - 70px);
@@ -120,6 +181,12 @@ body {
 
 .ep-title table tbody tr td {
     padding: 0 15px;
+}
+
+.ep-title table tbody tr th {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
 }
 
 img {
