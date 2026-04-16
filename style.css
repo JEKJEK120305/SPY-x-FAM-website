@@ -66,8 +66,10 @@ body {
 
 .header-sec .main-tag {
     text-decoration: none;
+    font-weight: bold;
     color: rgb(22, 71, 80);
     cursor: pointer;
+    padding: 15px;
 }
 
 .header-sec .main-tag:hover {
@@ -87,13 +89,6 @@ body {
 .dropDown {
     display: inline-block;
     position: relative;
-}
-
-.dropdown-btn {
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
-    padding: 15px;
 }
 
 .dropDown-lst {
