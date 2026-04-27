@@ -8,11 +8,10 @@ window.addEventListener("load", ()=>{
 
     const sections = document.querySelectorAll("#webpage > section");
     const navLinks = document.querySelectorAll(".nav-bar a[href^='#']");
+    let currentOpenId = null;
 
     sections.forEach(sec => {
         sec.style.display = "none";
-        sec.style.transition = "opacity 0.4s ease";
-        sec.style.opacity = "0";
     });
 
 
@@ -21,22 +20,25 @@ window.addEventListener("load", ()=>{
             e.preventDefault();
 
             const targetId = link.getAttribute("href").replace("#", "");
+
+            if (currentOpenId === targetId) {
+                document.getElementById(targetId).style.display = "none";
+                currentOpenId = null;
+                return;
+            }
+
+            sections.forEach(sec => {
+                sec.style.display = "none";
+            });
+
             const targetSection = document.getElementById(targetId);
-
             if (targetSection) {
-                sections.forEach(sec => {
-                    sec.style.display = "none";
-                    sec.style.opacity = "0";
-                });
-
                 targetSection.style.display = "block";
-                setTimeout(() => {
-                    targetSection.style.opacity = "1";
-                }, 10);
-
+                currentOpenId = targetId;
                 targetSection.scrollIntoView({ behavior: "smooth" });
             }
-        });
+            }
+        );
     });
 
 });
