@@ -419,6 +419,7 @@ th {
     text-shadow: 1px 1px white;
     font-size: clamp(1.6rem, 9vw, 60px);
     letter-spacing: clamp(2px, 1.5vw, 5px);
+    text-align: center;
     opacity: 0;
     transform: translateY(40px);
     transition: 1s;
