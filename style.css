@@ -31,7 +31,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     min-height: 100vh;
-    background-image: url(spyxfamilybggg5.jpg);
+    background-image: url(spyxfambodybggg21.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -159,7 +159,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.1);
-    width: calc(100% - 70px);
+    width: calc(100% - 45px);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
 }
@@ -237,7 +237,7 @@ th {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
-    width: calc(100% - 70px);
+    width: calc(100% - 45px);
     overflow: hidden;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
@@ -326,7 +326,7 @@ th {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
 
     #spyxfam {
         padding: 12px 10px;
