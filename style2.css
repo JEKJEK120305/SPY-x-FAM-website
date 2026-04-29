@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#header-forger {
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    background: linear-gradient(90deg, rgba(41, 179, 75, 1) 49%, rgba(237, 221, 83, 1) 100%);
+}
+
+img {
+    display: block;
+    width: 250px;
+    height: 150px;
+    border: none;
+    border-radius: 15px;
+}
+
+.fam-column {
+    display: flex;
+}
