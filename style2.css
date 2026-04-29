@@ -10,9 +10,17 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
 #header-forger {
     display: block;
     text-align: center;
+    font-size: clamp(1rem, 1vw, 2rem);
     padding: 20px 15px;
     background: linear-gradient(90deg, rgba(41, 179, 75, 1) 49%, rgba(237, 221, 83, 1) 100%);
 }
@@ -30,7 +38,7 @@ p {
     text-align: center;
 }
 
-.fam-row {
+.forger-famInfo .fam-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,10 +46,28 @@ p {
     margin: 25px;
 }
 
-.fam-column {
+.forger-famInfo .fam-row .fam-img {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 25px;
+    gap: 25px;
+}
+
+.forger-famInfo .fam-row-text {
+    text-align: center;
+}
+
+.forger-famInfo .fam-row-text p {
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    #header-forger h1 {
+        font-size: 1.5rem;
+    }
 }
