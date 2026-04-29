@@ -23,8 +23,25 @@ img {
     height: 150px;
     border: none;
     border-radius: 15px;
+    margin: auto 10px;
+}
+
+p {
+    text-align: center;
+}
+
+.fam-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
 }
 
 .fam-column {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
 }
