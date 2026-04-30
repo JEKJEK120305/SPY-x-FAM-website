@@ -63,11 +63,36 @@ p {
 .forger-famInfo .fam-row-text p {
     background-color: yellow;
     border: none;
+    width: 850px;
     border-radius: 20px;
 }
 
 @media screen and (max-width: 480px) {
     #header-forger h1 {
         font-size: 1.5rem;
+    }
+
+    .forger-famInfo .fam-row-text p {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #header-forger h1 {
+        font-size: 1.8rem;
+    }
+
+    .forger-famInfo .fam-row-text p {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    #header-forger h1 {
+        font-size: 2rem;
+    }
+
+    .forger-famInfo .fam-row-text p {
+        width: 700px;
     }
 }
