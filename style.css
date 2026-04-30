@@ -235,13 +235,11 @@ th {
     text-align: center;
     font-size: 1.2rem;
     margin: 30px;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     width: calc(100% - 45px);
     overflow: hidden;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
 }
 
