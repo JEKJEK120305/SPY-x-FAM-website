@@ -24,6 +24,13 @@ body {
     background-repeat: no-repeat;
 }
 
+#desmond-family {
+    background-image: url(desmondbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 #header-forger, #header-blackbell, #header-desmond {
     display: block;
     text-align: center;
