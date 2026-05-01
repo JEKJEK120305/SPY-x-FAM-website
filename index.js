@@ -81,18 +81,20 @@ window.addEventListener("load", ()=>{
         p.style.transition = "max-height 0.6s ease, opacity 0.5s ease, padding 0.4s ease";
     });
 
-    const heading = document.querySelectorAll(".fam-row-text h2");
-    heading.forEach(h2 => {
-        h2.addEventListener("mouseenter", () => {
-            h2.style.transform = "scale(1.05)";
+    const heading = document.querySelectorAll(".fam-row-text h2 span");
+    heading.forEach(span => {
+        span.style.cursor = "pointer";
+
+        span.addEventListener("mouseenter", () => {
+            span.style.transform = "scale(1.05)";
         });
         
-        h2.addEventListener("mouseleave", () => {
-            h2.style.transform = "scale(1)";
+        span.addEventListener("mouseleave", () => {
+            span.style.transform = "scale(1)";
         });
         
-        h2.addEventListener("click", () => {
-            const parentBlock = h2.closest(".fam-row-text");
+        span.addEventListener("click", () => {
+            const parentBlock = span.closest(".fam-row-text");
             const p = parentBlock.querySelector("p");
             const isOpen = p.style.opacity === "1";
             
@@ -106,6 +108,6 @@ window.addEventListener("load", ()=>{
                 p.style.padding = "20px";
             }
         });
-    })
+    });
 
 });

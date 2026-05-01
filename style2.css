@@ -15,11 +15,13 @@ body {
     width: 100%;
     overflow-x: hidden;
     min-height: 100vh;
-    background-color: red;
 }
 
-h2:hover {
-    cursor: pointer;
+#forger-family {
+    background-image: url(forgerfambg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #header-forger, #header-blackbell, #header-desmond {
@@ -63,6 +65,13 @@ p {
 
 .forger-famInfo .fam-row-text, .blackbell-famInfo .fam-row-text, .desmond-famInfo .fam-row-text {
     text-align: center;
+}
+
+.forger-famInfo .fam-row .fam-row-text h2 span, .blackbell-famInfo .fam-row .fam-row-text h2 span, .desmond-famInfo .fam-row .fam-row-text h2 span {
+    background-color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
 }
 
 .forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
