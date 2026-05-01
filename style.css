@@ -54,11 +54,11 @@ body {
 }
 
 .header-sec {
-    background-color: #D4AF7F;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    background-color: #D4AF7F;
     padding: 5px 0;
     position: fixed;
     top: 75px;
@@ -252,7 +252,6 @@ th {
     padding: 10px 20px;
     overflow: hidden;
     overflow-wrap: break-word;
-    word-wrap: break-word;
 }
 
 .about-paragraph, .story-paragraph {
@@ -318,6 +317,10 @@ th {
     .about-head, .story-head {
         padding-top: 12px;
         margin-bottom: 8px;
+    }
+
+    #episode, #about, #storyline {
+        margin-top: 35px;
     }
 }
 
@@ -411,6 +414,12 @@ th {
     .dropDown-lst a {
         padding: 10px 12px;
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #about, #storyline {
+        margin-top: 25px;
     }
 }
 

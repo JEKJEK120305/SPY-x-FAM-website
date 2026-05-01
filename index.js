@@ -8,6 +8,7 @@ window.addEventListener("load", ()=>{
 
     const sections = document.querySelectorAll("#webpage > section");
     const navLinks = document.querySelectorAll(".nav-bar a[href^='#']");
+    
     let openId = null;
 
     sections.forEach(sec => {
@@ -70,5 +71,41 @@ window.addEventListener("load", ()=>{
             }
         );
     });
+
+    const paragraph = document.querySelectorAll(".fam-row-text p");
+    paragraph.forEach(p => {
+        p.style.maxHeight = "0";
+        p.style.overflow = "hidden";
+        p.style.opacity = "0";
+        p.style.padding = "0 20px";
+        p.style.transition = "max-height 0.6s ease, opacity 0.5s ease, padding 0.4s ease";
+    });
+
+    const heading = document.querySelectorAll(".fam-row-text h2");
+    heading.forEach(h2 => {
+        h2.addEventListener("mouseenter", () => {
+            h2.style.transform = "scale(1.05)";
+        });
+        
+        h2.addEventListener("mouseleave", () => {
+            h2.style.transform = "scale(1)";
+        });
+        
+        h2.addEventListener("click", () => {
+            const parentBlock = h2.closest(".fam-row-text");
+            const p = parentBlock.querySelector("p");
+            const isOpen = p.style.opacity === "1";
+            
+            if (isOpen) {
+                p.style.maxHeight = "0";
+                p.style.opacity = "0";
+                p.style.padding = "0 20px";
+            } else {
+                p.style.maxHeight = "2000px";
+                p.style.opacity = "1";
+                p.style.padding = "20px";
+            }
+        });
+    })
 
 });

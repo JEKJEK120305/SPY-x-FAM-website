@@ -18,7 +18,11 @@ body {
     background-color: red;
 }
 
-#header-forger, #header-briar, #header-desmond {
+h2:hover {
+    cursor: pointer;
+}
+
+#header-forger, #header-blackbell, #header-desmond {
     display: block;
     text-align: center;
     font-size: clamp(1rem, 1vw, 2rem);
@@ -39,7 +43,7 @@ p {
     text-align: center;
 }
 
-.forger-famInfo .fam-row, .briar-famInfo .fam-row, .desmond-famInfo .fam-row {
+.forger-famInfo .fam-row, .blackbell-famInfo .fam-row, .desmond-famInfo .fam-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +51,7 @@ p {
     margin: 25px;
 }
 
-.forger-famInfo .fam-row .fam-img, .briar-famInfo .fam-row .fam-img, .desmond-famInfo .fam-row .fam-img {
+.forger-famInfo .fam-row .fam-img, .blackbell-famInfo .fam-row .fam-img, .desmond-famInfo .fam-row .fam-img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,11 +61,11 @@ p {
     gap: 25px;
 }
 
-.forger-famInfo .fam-row-text, .briar-famInfo .fam-row-text, .desmond-famInfo .fam-row-text {
+.forger-famInfo .fam-row-text, .blackbell-famInfo .fam-row-text, .desmond-famInfo .fam-row-text {
     text-align: center;
 }
 
-.forger-famInfo .fam-row .fam-row-text p, .briar-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
+.forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
     background-color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 20px;
@@ -72,7 +76,7 @@ p {
 }
 
 @media screen and (max-width: 390px) {
-    .forger-famInfo .fam-row .fam-row-text p, .briar-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
+    .forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
         font-size: clamp(1rem, 3vw, 0.87rem);
         margin: 15px auto;
         width: calc(100% - 14px);
@@ -84,7 +88,7 @@ p {
         font-size: clamp(2rem, 4vw, 1.4rem);
     }
 
-    .forger-famInfo .fam-row .fam-row-text p, .briar-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
+    .forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
         font-size: clamp(1rem, 3vw, 0.87rem);
         margin: 15px auto;
         width: calc(100% - 14px);
@@ -92,7 +96,7 @@ p {
 }
 
 @media screen and (min-width: 500px) and (max-width: 790px) {
-    .forger-famInfo .fam-row .fam-row-text p, .briar-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
+    .forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
         font-size: clamp(1.5rem, 4vw, 0.65rem);
         margin: 15px auto;
         width: calc(100% - 34px);
@@ -100,20 +104,20 @@ p {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1300px){
-    #header-forger, #header-briar, #header-desmond {
+    #header-forger, #header-blackbell, #header-desmond {
         font-size: clamp(1.5rem, 4vw, 0.85rem);
     }
 
-    .forger-famInfo, .briar-famInfo, .desmond-famInfo {
+    .forger-famInfo, .blackbell-famInfo, .desmond-famInfo {
         margin: 100px auto;
     }
 
-    .forger-famInfo .fam-row .fam-row-text h2, .briar-famInfo .fam-row .fam-row-text h2, .desmond-famInfo .fam-row .fam-row-text h2 {
+    .forger-famInfo .fam-row .fam-row-text h2, .blackbell-famInfo .fam-row .fam-row-text h2, .desmond-famInfo .fam-row .fam-row-text h2 {
         font-size: clamp(2.5rem, 5vw, 2.2rem);
         margin: 7px auto;
     }
 
-    .forger-famInfo .fam-row .fam-row-text p, .briar-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
+    .forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p {
         font-size: clamp(1.8rem, 3vw, 0.83rem);
         margin: 15px auto;
         width: calc(100% - 42px);
