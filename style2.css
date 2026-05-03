@@ -18,28 +18,23 @@ body {
 }
 
 #forger-family {
-    background-image: url(forgerfambg.jpg);
-    background-size: cover;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 #desmond-family {
-    background-image: url(desmondbg.jpg);
-    background-size: cover;
+    background: linear-gradient(135deg, #0c0c1d, #1f1c2c);
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 #blackbell-family {
-    background-image: url(blackbellbg.jpg);
-    background-size: cover;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 #other-characters-spyxfam {
     background: linear-gradient(to right, #1a1a1a, #434343);
+    background-attachment: fixed;
 }
 
 #header-forger, #header-blackbell, #header-desmond, #header-others {
