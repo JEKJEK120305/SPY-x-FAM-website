@@ -38,7 +38,7 @@ img {
     display: block;
     width: 250px;
     height: 150px;
-    border: none;
+    border: 2px solid gray;
     border-radius: 15px;
     margin: auto 10px;
 }
