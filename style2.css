@@ -72,17 +72,17 @@ p {
 .forger-famInfo .fam-row .fam-row-text h2 span, .blackbell-famInfo .fam-row .fam-row-text h2 span, .desmond-famInfo .fam-row .fam-row-text h2 span, .othersInfo .fam-row .fam-row-text h2 span {
     background-color: white;
     padding: 8px;
-    border: none;
+    border: 3px solid rgb(154, 209, 66);
     border-radius: 15px;
 }
 
 .forger-famInfo .fam-row .fam-row-text p, .blackbell-famInfo .fam-row .fam-row-text p, .desmond-famInfo .fam-row .fam-row-text p, .othersInfo .fam-row .fam-row-text p {
     background-color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(160, 160, 62);
     font-size: 20px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    box-shadow: 0 7px 30px rgb(88, 21, 21);
     width: calc(100% - 54px);
 }
 
@@ -114,7 +114,7 @@ p {
     }
 }
 
-@media screen and (min-width: 791px) and (max-width: 1300px){
+@media screen and (min-width: 791px) and (max-width: 1300px) {
     #header-forger, #header-blackbell, #header-desmond, #header-others {
         font-size: clamp(1.5rem, 4vw, 0.85rem);
     }
