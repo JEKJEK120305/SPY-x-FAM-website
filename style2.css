@@ -17,24 +17,13 @@ body {
     min-height: 100vh;
 }
 
-#forger-family {
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    background-attachment: fixed;
-}
-
-#desmond-family {
-    background: linear-gradient(135deg, #0c0c1d, #1f1c2c);
-    background-attachment: fixed;
-}
-
-#blackbell-family {
-    background: linear-gradient(135deg, #43cea2, #185a9d);
-    background-attachment: fixed;
-}
-
-#other-characters-spyxfam {
-    background: linear-gradient(to right, #1a1a1a, #434343);
-    background-attachment: fixed;
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 #header-forger, #header-blackbell, #header-desmond, #header-others {
